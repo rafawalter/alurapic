@@ -1,0 +1,9 @@
+.painel-animado.ng-leave-active {
+	-webkit-transform: scale(0.1);
+	transform: scale(0.1);
+}
+
+.painel-animado {
+	-webkit-transition: transform 0.8s;
+	transition: transform 0.8s;
+}
