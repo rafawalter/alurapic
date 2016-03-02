@@ -8,8 +8,11 @@ angular.module("alurapic", ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
 		});
 		$routeProvider.when('/fotos/new', {
 			templateUrl: 'partials/foto.html',
+			controller: 'FotoController'
 
 		});
+
+
 		$routeProvider.when('/404', {
 			templateUrl: 'partials/404.html',
 
