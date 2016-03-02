@@ -6,8 +6,8 @@ angular.module("alurapic", ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
 			templateUrl: 'partials/principal.html',
 			controller: 'FotosController'
 		});
-		$routeProvider.when('/cadastro', {
-			templateUrl: 'partials/cadastro.html',
+		$routeProvider.when('/fotos/new', {
+			templateUrl: 'partials/foto.html',
 
 		});
 		$routeProvider.when('/404', {

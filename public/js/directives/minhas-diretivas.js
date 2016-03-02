@@ -8,4 +8,14 @@ angular.module('minhasDiretivas', [])
 			titulo: "@"
 		};
 		return ddo;
+	})
+	.directive('minhaFoto', function() {
+		return {
+			restrict: "E",
+			template: '<img class="img-responsive center-block" src="{{url}}" alt="{{titulo}}">',
+			scope: {
+				titulo: '@',
+				url: '@'
+			},
+		};
 	});
