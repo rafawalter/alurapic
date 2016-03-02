@@ -9,6 +9,17 @@ angular.module('minhasDiretivas', [])
 		};
 		return ddo;
 	})
+	.directive('meuErro', function() {
+		return {
+			transclude: true,
+			restrict: "AE",
+			templateUrl: "js/directives/meu-erro.html",
+			scope: {
+				mensagem: "@",
+				exibir: '@',
+			},
+		};
+	})
 	.directive('minhaFoto', function() {
 		return {
 			restrict: "E",

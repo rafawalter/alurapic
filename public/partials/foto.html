@@ -2,6 +2,8 @@
 	<h1>{{foto.titulo}}</h1>
 </div>
 
+<p class="alert-info" ng-show='mensagem.length'>{{mensagem}}</p>
+
 <form class="row" name="formulario" ng-submit='submeter()' novalidate>
 	<div class="col-md-6">
 		<div class="form-group">
@@ -9,6 +11,10 @@
 			<input ng-maxlength="10" class="form-control" name="titulo" ng-model="foto.titulo" ng-required='true'>
 
 			<span ng-show='formulario.titulo.$error.required' class="form-control alert-danger">Título obrigatório</span>
+			
+			<!--
+			<meu-erro exibir='formulario.titulo.$error.required'>Título obrigatório novamente</meu-erro>
+			-->
 			
 			<span ng-show='formulario.titulo.$error.maxlength' class="form-control alert-danger">Título não pode ter mais de 10 caracteres</span>
 		</div>
