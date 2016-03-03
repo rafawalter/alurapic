@@ -8,6 +8,7 @@ angular.module("alurapic").controller("FotosController", function($scope, $resou
 
 
 	var recursoFoto = $resource('/v1/fotos/:fotoId');
+	
 	$scope.obterFotos = function() {
 		recursoFoto.query(function(fotos) {
 			$scope.fotos = fotos;
