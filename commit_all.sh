@@ -1,4 +1,3 @@
-git status
 git add .
-git commit -m \"$1\"
+git commit -a -m \"$1\"
 git status

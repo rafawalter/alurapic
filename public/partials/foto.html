@@ -15,16 +15,25 @@
 			<!--
 			<meu-erro exibir='formulario.titulo.$error.required'>Título obrigatório novamente</meu-erro>
 			-->
-			
+
 			<span ng-show='formulario.titulo.$error.maxlength' class="form-control alert-danger">Título não pode ter mais de 10 caracteres</span>
 		</div>
+
 		<div class="form-group">
 			<label for="">URL</label>
 			<input class="form-control" name="url" ng-model="foto.url">
 		</div>
+
 		<div class="form-group">
 			<label for="">Descrição</label>
 			<textarea class="form-control" name="descricao" ng-model="foto.descricao"></textarea>
+		</div>
+
+		<div class="form-group">
+			<label>Grupo</label>
+			<select name="grupo" ng-controller='GruposController' ng-model='foto.grupo' ng-options='grupo._id as grupo.nome for grupo in grupos' class="form-control">
+				<option value="">Escolha um grupo</option>
+			</select>
 		</div>
 
 		<button ng-disabled='!formulario.$valid' class="btn btn-primary" type="submit">Salvar</button>
