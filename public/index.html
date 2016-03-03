@@ -11,6 +11,8 @@
         <script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-animate.min.js"></script>  
         <script src="js/lib/angular-route.min.js"></script>  
+        <script src="js/lib/angular-resource.min.js"></script>
+          
         <script src="js/main.js"></script>
         <script src="js/controllers/fotos-controller.js"></script>
         <script src="js/controllers/foto-controller.js"></script>
@@ -20,7 +22,9 @@
 
     <body>
         <div class="container">
-            <ng-view></ng-view>
+            <ng-view>
+                <a href='navegador.html'>Navegador</a>
+            </ng-view>
         </div> <!-- fim container -->
     </body>
 </html>
