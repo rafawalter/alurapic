@@ -1,4 +1,4 @@
-git add .
-git commit -a -m \"$1\"
+git add --all
+git commit -a -m $1
 git push
 git status

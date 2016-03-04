@@ -29,4 +29,14 @@ angular.module('minhasDiretivas', [])
 				url: '@'
 			},
 		};
+	})
+	.directive('botaoPerigo', function() {
+		var ddo = {};
+		ddo.restrict = 'E';
+		ddo.template = '<button class="btn btn-danger btn-block" ng-click="acao">{{nome}}</button>';
+		ddo.scope = {
+			nome: '@',
+			acao: '&',
+		};
+		return ddo;
 	});

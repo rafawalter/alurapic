@@ -19,7 +19,7 @@ angular.module("alurapic")
 							$scope.foto = {};							
 						} else {
 							$location.path('/');
-						}
+						};
 					}).catch(function(retorno){
 						$scope.mensagem = retorno.mensagem;
 					});
